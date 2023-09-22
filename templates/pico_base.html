@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html data-theme="dark"> <!-- pico light/dark -->
+    <head>
+        {%- block head %}
+        <title>R3D/:{% block page_title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8"><meta name="description" content="r3">
+        <!-- Vendor Libraries -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pico.min.css') }}">
+        <!-- Static Files -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pico.custom.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+        {%- endblock head %}
+    </head>
+
+    <body>
+        <nav style="padding: 0px 20px;">
+          <ul>
+            <li><strong>Brand</strong></li>
+          </ul>
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#" role="button">Button</a></li>
+          </ul>
+        </nav>
+
+        <div>
+        {%- block content %}
+        {% endblock content %}
+        </div>
+
+        <footer>
+        {%- block footer %}
+            <p>Development and Content &copy; 2002-2023 avatarofvelius｡</p>
+        {%- endblock footer %}
+        </footer>
+    </body>
+</html>

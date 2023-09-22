@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {%- block head %}
+        <title>R3D/:{% block page_title %}{% endblock %}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8"><meta name="description" content="r3">
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+        {%- endblock head %}
+    </head>
+
+    <body>
+        <nav>
+        {%- block navigation %}      
+            <ul><li><a href="/">Base</a></li></ul>
+            <ul><li><a href="/pico">Pico CSS</a></li></ul>
+        {%- endblock navigation %}
+        </nav>
+
+        <div>
+        {%- block content %}
+        {% endblock content %}
+        </div>
+
+        <footer>
+        {%- block footer %}
+            <p>Development and Content &copy; 2002-2023 avatarofvelius｡</p>
+        {%- endblock footer %}
+        </footer>
+    </body>
+</html>
