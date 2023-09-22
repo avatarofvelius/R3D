@@ -5,3 +5,15 @@
 footer > p {
     margin-left: 25px;
 }
+
+
+
+/*
+    ausi.css :: adjustments for unattended style issues
+*/
+
+/* nav gap fix 20px bottom */
+article {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
