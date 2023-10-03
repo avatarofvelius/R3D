@@ -1,6 +1,7 @@
 # R3D ( Offline Repository )
 a flask backend, with a basic pico.css and alpine.js frontend.
 
+
 ## Purpose
 Learning and implementing Flask with Celery automation, with an easily deployed light frontend.
 
@@ -12,10 +13,11 @@ Learning and implementing Flask with Celery automation, with an easily deployed 
 - initial version without redis, flask api, or backend automation.
 1. celery service workers manage local data, ending up as json objects for frontend.
 2. flask serves data locally as an api, through redis, or pushed physically to host.
-3. alpine or other alternative serves json to frontend. 
+3. alpine or other alternative to inject json to frontend. 
 
 
 ## Experimental & Situational Processes
+
 
 ### Redis
 https://redis.io/docs/getting-started/installation/install-redis-on-windows/
@@ -25,6 +27,7 @@ https://redis.io/docs/getting-started/installation/install-redis-on-windows/
 - install redis on raspberry pi. use for celery workers amd nosql data objects.
 1. use celery to automate background workers to send update data to redis. 
 2. serve data as json objects via a Flask API.  
+
 
 ## Packages
 - Flask
