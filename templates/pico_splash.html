@@ -1,0 +1,38 @@
+{% extends "pico_base.html" -%}
+
+{% block page_title %} Splash | Pico.css {%- endblock %}
+
+{%- block content %}
+
+    <div style="  display: flex; justify-content: center; align-items: center; padding: 100px; margin-bottom: 25px;">
+
+        <span style="float: left; padding-top: 25px;">
+            <ul>
+                <img src="{{ url_for('static', filename='13100.svg') }}">
+            </ul>
+        </span>
+        <span style="float: right; margin-left: 40px;">
+            <li><a href="/">Base</a></li>
+            <li><a href="/pico">Pico CSS</a></li>
+            <li><a href="/pico_splash">Pico Splash</a></li>
+        </span>
+
+    </div>
+
+    <article>
+        <h1><strong>The Recursive Reclamation Resource Department</strong></h1>
+        
+        <section>
+            <figure class="quote">
+                <h3><b>What Information Is Included?</b></h3>
+                <blockquote>
+                    But web browsers aren’t like web servers. If your back-end code is getting so big that it’s starting to run noticably slowly, you can throw more computing power at it by scaling up your server. That’s not an option on the front-end where you don’t really have <em>one</em> run-time environment—your end users have their own run-time environment with its own constraints around computing power <strong>and</strong> network connectivity.
+                </blockquote>
+                <figcaption>
+                    &mdash; Jeremy Keith, <cite>Mental models</cite>
+                </figcaption>
+            </figure>
+        </section>
+    </article>
+
+{%- endblock content %}

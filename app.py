@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -14,3 +15,8 @@ def index():
 @app.route('/pico')
 def pico():
     return render_template('pico_index.html')
+
+## Pico.css Route
+@app.route('/pico_splash')
+def pico_splash():
+    return render_template('pico_splash.html')
