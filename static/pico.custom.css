@@ -1,3 +1,5 @@
+
+
 *, p {
     font-size: 105%;
 }
@@ -14,6 +16,5 @@ footer > p {
 
 /* nav gap fix 20px bottom */
 article {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+    margin: 5px auto;
+}
