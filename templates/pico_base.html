@@ -20,9 +20,9 @@
             <li><img src="{{ url_for('static', filename='L13100.svg') }}"></li>
           </ul>
           <ul>
-            <li><a href="/pico">Index</a></li>
-            <li><a href="/pico_splash">Splash</a></li>
-            <li><a href="#" role="button">Button</a></li>
+            <li><a href="/">Index</a></li>
+            <li><a href="/splash">Splash</a></li>
+            <li><a href="/example" role="button">Button</a></li>
           </ul>
         </nav>
 
@@ -32,8 +32,9 @@
         </div>
 
         <footer>
-        {%- block footer %}
-            <p>Development and Content &copy; 2002-2023 avatarofvelius｡</p>
+        {%- block footer %}   
+          <span><center>Updated on ( {{ md }} ) </center></span>
+          <span><center>&copy; 2002-2024 avatarofvelius｡</center></span>
         {%- endblock footer %}
         </footer>
     </body>

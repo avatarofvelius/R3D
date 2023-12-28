@@ -1,0 +1,28 @@
+<!-- Reader Mode works very well. somewhat better than pico.css -->
+
+{% extends "pico_base.html" -%}
+
+{% block page_title %} TLM Example {%- endblock %}
+
+{%- block content %}
+
+<article >
+    <section data-theme="dark"> 
+        <span><center><code>/htmp::/MrA.Lan.D-R3/<:_index.md_:></code></center></span>
+        <center><a href="#">Breadcrumb</a> / <a href="#">Breadcrumb</a> / <span>Breadcrumb</span></center>
+
+        <!-- fix margin bottom  -->
+    </section>
+</article>
+
+<!-- start book content -->
+<article data-theme="light">
+    <section class="container">
+        <center><h2>The Little Mermaid Example</h2></center>
+    </section>
+    <section class="container document">      
+        {% include 'tlm.html' %}
+    </section>
+</article>
+<!-- end book content -->
+{%- endblock content %}

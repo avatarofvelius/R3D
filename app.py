@@ -1,5 +1,16 @@
-
 from flask import Flask, render_template
+
+# Last Modified Date
+import os
+import datetime
+file_path = 'templates/pico_index.html'
+file_stat = os.stat(file_path)
+modification_timestamp = file_stat.st_mtime
+md = datetime.datetime.fromtimestamp(modification_timestamp)
+
+
+
+
 
 app = Flask(__name__)
 
@@ -9,14 +20,13 @@ if __name__ == '__main__':
 ## Index Route
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('pico_index.html', md=md)
 
 ## Pico.css Route
-@app.route('/pico')
-def pico():
-    return render_template('pico_index.html')
+@app.route('/splash')
+def splash():
+    return render_template('pico_splash.html', md=md)
 
-## Pico.css Route
-@app.route('/pico_splash')
-def pico_splash():
-    return render_template('pico_splash.html')
+@app.route('/example')
+def example():
+    return render_template('example.html', md=md)

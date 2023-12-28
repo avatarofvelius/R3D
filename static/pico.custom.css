@@ -1,6 +1,11 @@
 
+.document {
+    font-family: serif; /* works in browser, but not is vs code extension - vs browser */
+    font-size: 105%;
+}
 
 *, p {
+
     font-size: 105%;
 }
 
@@ -9,12 +14,12 @@ footer > p {
 }
 
 
-
 /*
     ausi.css :: adjustments for unattended style issues
 */
 
 /* nav gap fix 20px bottom */
-article {
-    margin: 5px auto;
+article {  
+    max-width: 900px; /* remove for full width content blocks */
+    margin: 0px auto;
 }
