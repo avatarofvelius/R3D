@@ -7,10 +7,7 @@ file_path = 'templates/pico_index.html'
 file_stat = os.stat(file_path)
 modification_timestamp = file_stat.st_mtime
 md = datetime.datetime.fromtimestamp(modification_timestamp)
-
-
-
-
+# End 
 
 app = Flask(__name__)
 
@@ -21,6 +18,11 @@ if __name__ == '__main__':
 @app.route('/')
 def index():
     return render_template('pico_index.html', md=md)
+
+## Showcase
+@app.route('/showcase')
+def showcase():
+    return render_template('pico_showcase.html', md=md)
 
 ## Pico.css Route
 @app.route('/splash')
