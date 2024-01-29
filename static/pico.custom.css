@@ -1,12 +1,14 @@
 
+
+
 .document {
     font-family: serif; /* works in browser, but not is vs code extension - vs browser */
     font-size: 105%;
 }
-
+/* Initially Set To 105%. Might Need To Adjust Based On Screen */
 *, p {
 
-    font-size: 105%;
+    font-size: 110%;
 }
 
 footer > p {

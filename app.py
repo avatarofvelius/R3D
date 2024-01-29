@@ -16,8 +16,8 @@ if __name__ == '__main__':
 
 ## Index Route
 @app.route('/')
-def index():
-    return render_template('pico_index.html', md=md)
+def splash():
+    return render_template('pico_splash.html', md=md)
 
 ## Showcase
 @app.route('/showcase')
@@ -25,9 +25,9 @@ def showcase():
     return render_template('pico_showcase.html', md=md)
 
 ## Pico.css Route
-@app.route('/splash')
-def splash():
-    return render_template('pico_splash.html', md=md)
+@app.route('/index')
+def index():
+    return render_template('pico_index.html', md=md)
 
 @app.route('/example')
 def example():
