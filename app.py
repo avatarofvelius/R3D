@@ -20,9 +20,9 @@ def splash():
     return render_template('pico_splash.html', md=md)
 
 ## Showcase
-@app.route('/showcase')
+@app.route('/bio')
 def showcase():
-    return render_template('pico_showcase.html', md=md)
+    return render_template('pico_bio.html', md=md)
 
 ## Pico.css Route
 @app.route('/index')
