@@ -19,13 +19,10 @@ Learning and implementing Flask with Celery automation, with an easily deployed 
 ## Experimental & Situational Processes
 
 
-### Redis
-https://redis.io/docs/getting-started/installation/install-redis-on-windows/
-- redis not easily supported on windows.
-- do not want to install linux through WSL. 
+### Docker
 
-- install redis on raspberry pi. use for celery workers amd nosql data objects.
-1. use celery to automate background workers to send update data to redis. 
+- install docker container on raspberry pi. use for celery workers amd nosql data objects.
+1. use celery to automate background workers to send update data to docker image. 
 2. serve data as json objects via a Flask API.  
 
 
@@ -35,9 +32,6 @@ https://flask.palletsprojects.com/en/2.3.x/quickstart/
 
 - Celery ( not implemented )
 https://flask.palletsprojects.com/en/2.3.x/patterns/celery/
-
-- Redis ( for celery service workers not implemented )
-https://redis.io/docs/getting-started/
 
 - Pico.css
 https://picocss.com/docs/
